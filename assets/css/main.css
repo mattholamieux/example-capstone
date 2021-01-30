@@ -1,0 +1,479 @@
+/*----------imported fonts-----------*/
+
+@font-face{
+	font-family:"BebasNeueRegular";
+	src:url("fonts/BebasNeueRegular.ttf")
+}
+
+@font-face{
+	font-family:"BebasNeueBook";
+	src:url("fonts/BebasNeueBook.ttf")
+}
+
+@font-face{
+	font-family:"BebasNeueBold";
+	src:url("fonts/BebasNeueBold.ttf")
+}
+
+@font-face{
+	font-family:"FontAwesome";
+	src:url("fonts/fontawesome.css")
+}
+
+
+.regular{
+	
+	font-family:"BebasNeueRegular";
+	
+}
+
+.book{
+	font-family:"BebasNeueBook";
+	
+}
+
+.bold{
+	font-family:"BebasNeueBold";
+	
+}
+
+@import "components/button";
+@import "components/card";
+@import "components/composition";
+
+
+/*---------------------------------------
+Colors index
+---------------------------------------------*/
+
+#word {
+	z-index: 999;
+	position: absolute;
+	left: 400px;
+  animation: wordSpin 1s cubic-bezier(0.42, 0.0, 0.58, 1.0);
+}
+
+
+@keyframes wordSpin {
+  100% {transform: rotate(-90deg) translateX(-100px) rotate(360deg) translateY(-100px) rotate(30deg) translateX(-100px) rotate(60deg) translateY(-100px) rotate(360deg); }
+ 
+ }
+
+.door {
+  vertical-align: middle;
+  border-style: none;
+  margin-left: 30px;
+  width: 38%;
+}
+
+/*---------------------------------------
+Navagation
+---------------------------------------------*/
+.navbar-nav{
+	height: 463px;
+	justify-content: space-evenly;
+	align-items: center;
+	background-image: url('pic/event4.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 75%;
+}
+.navbar-dark .navbar-toggler{
+    border-color: turquoise;
+}
+
+/*height: 315px;*/
+/*    justify-content: space-evenly;*/
+/*    align-items: center;*/
+    /* background-color: cadetblue; */
+/*    background-image: url(pic/event4.jpg);*/
+/*    background-repeat: no-repeat;*/
+/*    background-size: 43%;*/
+/*    background-position: center;*/
+
+/*---------------------------------------
+Welcome/Headers
+---------------------------------------------*/
+h2, .h2{
+	font-size: 4rem;
+}
+
+h2, h5, p {
+  text-align: center;
+  color: darkgray;
+}
+#wel-p{
+  font-size: 24px;
+}
+#color {
+	background-image: url('pic/ci.png');
+	background-repeat: no-repeat;
+	opacity: .8;
+	height: 980px;
+	background-size: 55%;
+}
+
+/*---------------------------------------
+Poets
+---------------------------------------------*/
+
+.composition {
+	position: relative;
+	right: 287px;
+}
+
+.composition_photo{
+	display: block;
+	width: 23%;
+	box-shadow: 0 1.5rem 4rem yellow;
+	border-radius: 5px;
+	position: absolute;
+	z-index: 1;
+	transition: all .2s;
+	outline-offset:2rem;
+}
+.composition_photo:hover{
+	outline: .2rem solid;
+	transform: scale(1.05);
+	box-shadow: 0 2.5rem 4rem purple;
+	z-index: 10;
+}
+.composition_photo--1{
+	top: -8rem;
+	left: 300px;
+	
+}
+.composition_photo--2{
+	top: 2rem;
+	left: 11rem;
+	
+}
+.composition_photo--3{
+	
+left: 30rem;
+top:11rem;
+
+	
+}
+.composition_photo--4{
+	top: 11rem;
+	left: 15rem;
+	
+}
+.composition_photo--5{
+	top: 12rem;
+	
+	
+}
+.composition_photo--6{
+
+	left: -17rem;
+	
+}
+.composition_photo--7{
+	top: 4rem;
+	left: 41rem;
+	
+}
+.composition_photo--8{
+	top: 6rem;
+	left: 26rem;
+	
+}
+
+.composition_photo--10{
+	top: 6rem;
+	left: -10rem;
+	
+}
+.composition_photo--11{
+
+	left: 31rem;
+	
+}
+.composition_photo--12{
+	top: 19rem;
+	left: 10rem;
+	
+}
+.composition_photo--13{
+	top: 20rem;
+	left: 30rem;
+	
+}
+.composition_photo--14{
+	top: 6rem;
+	left: -25rem;
+	
+}
+.composition_photo--15{
+	
+	left: 56rem;
+	
+}
+.composition_photo--16{
+	top:11rem;
+	left: 45rem;
+	
+}
+.composition_photo--17{
+	
+	left: -36rem;
+	
+}
+.composition_photo--18{
+	top: 11rem;
+	left: -12rem;
+}
+
+
+/*---------------------------------------
+Events
+---------------------------------------------*/
+
+#cvibe{
+	margin-left: 1px;
+  border-style: inset;
+  width: 100%;
+}
+#event {
+	background-image: url('pic/event3.jpg');
+	background-repeat: no-repeat;
+	opacity: 1;
+	height: 980px;
+	background-size: 100%;
+}
+.see{
+	color: white;
+}
+.head{
+	color:red;
+}
+
+.date{
+	color:darkred
+	;
+}
+.num{
+	color: purple;
+}
+.nav-item:hover{
+	font-size: 20px;
+}
+
+#eventdate:hover{
+	font-size: 20px;
+	color: green;
+}
+#eventdate{
+	border: 1px;
+	margin-left: 64px;
+	list-style-type: mongolian;
+
+}
+
+/*---------------------------------------
+Venue
+---------------------------------------------*/
+#newpg {
+	background-color: black;
+}
+#gallery {
+	float: left;
+	width: 90px;
+	margin-right: 30px;
+	margin-left: 10px;
+	
+}
+#gallery img {
+	display: inline-block;
+	margin: 0 0 10px 0;
+	border: 1px solid rgb(0,0,0);
+}
+#photo {
+	margin: 0 -84px;
+	position: absolute;
+}
+#photo img {
+	position: absolute;
+	width: 900px;
+	margin-left: 200px;
+}
+
+
+#club{
+	animation: infinite 3s linear colorchange;
+	padding: 20px;
+}
+
+@keyframes colorchange {
+	20% { background-color: aqua;}
+	40% { background-color: turquoise;}
+	60% { background-color: aquamarine;}
+	80% { background-color: hotpink;}
+	100% { background-color: violet;}
+}
+
+.description{
+	color: white;
+	position: relative;
+	left: 500px;
+	top: 200px;
+}
+
+/*---------------------------------------
+Register
+---------------------------------------------*/
+@keyframes grow {
+  /*0% { font-size: 0; }*/
+  100% { font-size: 40px; }
+}
+.amount {
+  animation-name: grow;
+  animation-duration: 2s;
+}
+
+.amount .growandstays {
+  animation-name: grow;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+.field{
+	margin-top: -356px;
+	border: 2px solid grey;
+}
+.billform {
+	color: navy;
+	font-family: Arial, Sans-Serif;
+	line-height: 165%;
+	
+}
+
+#order div {
+	padding-bottom: 10px;
+}
+
+#order .info {
+	display: block;
+	clear: left;
+	float: left;
+	width: 175px;
+	text-align: right;
+	vertical-align: baseline;
+}
+
+#order input[type="radio"] {
+	display: inline-block;
+	margin-top: 10px;
+}
+
+.main2 {
+	max-width: 760px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.reg{
+	margin: -144px;
+}
+
+.reg-p{
+	font-size: 24px;
+	color: darkblue;
+}
+
+.group::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+#register {
+	background-image: url('pic/sony.png');
+	background-repeat: no-repeat;
+	height: 980px;
+	background-color: cadetblue;
+	background-size: 50%;
+}
+
+/*---------------------------------------
+Popup
+---------------------------------------------*/
+.popup {
+	height: 100vh;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: hotpink;
+	z-index: 9999;
+	opacity: 0;
+	visibility: hidden;
+	transition: all .3s;
+}
+.popup:target{
+	opacity: 1;
+	visibility: visible;
+}
+.popup:target .popup_content{
+	opacity: 1;
+	transform: translate(8%, 4%)scale(0.8);
+}
+.popup_close{
+		color:darkgrey;
+		position: absolute;
+		top: 2.5rem;
+		right: 2.5rem;
+		font-size: 3rem;
+		text-decoration: none;
+		display: inline-block;
+		transition: all .2s;
+		line-height: 1;
+}
+
+.popup_content {
+	width: 75%;
+	height: 50rem;
+	background-color:aquamarine;
+	box-shadow: 0 2rem 4rem ;
+	border-radius: 3px;
+	display: table;
+	overflow: hidden;
+	opacity: 1;
+	transform: translate(0%, 5%)scale(.25);
+	transition: all .4s;
+	
+	
+}
+	
+.popup_left{
+	width: 33.333333%;
+	display: table-cell;
+}
+
+.popup-right{
+	width: 66.666666%;
+	display: table-cell;
+	vertical-align: middle;
+	padding: 3rem 5rem;
+}
+
+.popup-img {
+	display:block;
+	width: 100%;
+}
+#firstlady {
+	vertical-align: middle;
+  border-style: none;
+  width: 100%;
+}
+.popup_text {
+	font-size: 1.4rem;
+	margin-bottom: 4rem;
+	
+	column-count:2;
+	column-gap: 4rem;
+	column-rule: 1px solid color:grey;
+}
+

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="../assets/css/bootstrap.css">
+		<link rel="stylesheet" href="../assets/css/main.css">
+		<link rel="stylesheet" href="../assets/css/fonts/fontawesome.css">
+	</head>
+<body style="background-color:cadetblue;">
+	<nav class="navbar navbar-dark bg-dark navbar">
+    <div class="container">
+      <a href="welcome.html" class="navbar-brand mr-1"><span style="color:steelblue">C</span><span style="color:tomato">O</span><span style="color:slateblue">L</span><span style="color:blueviolet">O</span><span style="color:darkcyan">R</span><span style="color:green">S</span></a>
+          
+    <button class="navbar-toggler" type="button"
+      data-toggle="collapse" data-target="#navibavi"
+      aria-controls="navibavi"
+      aria-expanded="" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+          
+    <div class="collapse navbar-collapse" id="navibavi">
+     <div class="navbar-nav" style="font-size:x-large;">
+      
+		 <a href="welcome.html" style="color:red; font-weight
+					:bold">Welcome</a>
+					<a href="poet.html" style="color:navy; font-weight
+					:bold">Poets</a>
+					<a href="events.html" style="color:blue; font-weight
+					:bold">Events</a>
+					<a href="register.html" style="color:yellow; font-weight
+					:bold">Register</a>
+				
+     </div>
+    </div>
+    </div>
+  </nav>
+<!--REGISTER-->
+
+<section class="container-fluid" id="register">
+		<div class="row">
+			<h2 class="col-lg-6 offset-3 mt-5" style="color:white">
+				Get your Tickets Now!
+		  </h2>
+		</div>
+	
+	
+		
+	<div class="row">
+		<h5 class="col-lg-2 offset-5 mt-5 amount" style="color:papayawhip">$25 per pass</h5>
+	</div>
+	
+	<div class="row">
+		<p class="col-lg-6 offset-3 mt-5 reg-p">Book your spot, dont miss out on witnessing the latest upcoming Artist or even your opportunity on stage on our hottest nights!! Legends come and go! dont miss a chance to meet our special guest. Multiple passes may be purchased within the same order, so feel free to bring a friend or two along. Once your ticket is purchased we&#8217;ll follow up and provide a reciept for your tickets. See you soon</p>
+	</div>
+		
+	<h5 class="labelBlock text-center mt-5" style="color:papayawhip">Would you like to receive a Color's daily Event schedule e-mail from us? </h5>
+	
+	<div class="indent text-center" style="color:black">
+		<input  type="radio" name="spam" id="yes" value="yes">
+		<label for="yes" style="font-size: larger;">Yes</label>
+		<input type="radio" name="spam" id="no" value="no">
+		<label for="no" style="font-size: larger;">No</label>
+	</div>
+</section>
+
+
+
+		 
+
+
+
+<section class="container">
+
+	<div class="main2 group">
+		
+		<form action="#popup" class="billform" method="post" name="order" id="order">
+	
+			<fieldset class="field">
+				
+				<legend class="billform">Billing Information</legend>
+				
+				<div>
+					<label for="name" class="info">Name</label>
+					<input name="name" type="text" id="name">
+				</div>
+				<div>
+					<label for="address" class="info">Address</label>
+					<input name="address" type="text" id="address">
+					</div>
+					<div>
+						<label for="city" class="info">State/Province</label>
+						<input name="city" type="text" id="city">
+					</div>
+					
+				<div>
+					<label for="email" class="info">E-mail</label>
+					<input name="email" type="text" id="email">
+				</div>
+				<div>
+					<label for="age" class="info">Age</label>
+					<input name="age" type="text" id="age">
+				</div>
+				
+		<label>
+		    Number of Passes
+		    <select id="quantity" required>
+		      <option value="1">1</option>
+		      <option value="2">2</option>
+		      <option value="3">3</option>
+		      <option value="4">4</option>
+		      <option value="5">5</option>
+		    </select>
+		 </label>
+		 
+		 <select name="pick" id="eventPick">
+				<option>Select your Night </option>
+				<option value= "OPen Mic, March 7, 2020">OPen Mic, March 7, 2020 </option>
+				<option value= "Jazz Night, March 10, 2020">Jazz Night, March 10, 2020 </option>
+				<option value= "Comedy, March 12, 2020">Comedy, March 12, 2020 </option>
+				<option value= "OPen Mic, March 18, 2020">OPen Mic, March 18, 2020 </option>
+				<option value= "Jazz Night, March 22, 2020">Jazz Night, March 22, 2020 </option>
+				<option value= "Experssion's, March 24, 2020">Experssion's, March 24, 2020 </option>
+				<option value= "Comedy, March 27, 2020">Comedy, March 27, 2020</option>
+				<option value= "OPen Mic, March 30, 2020">OPen Mic, March 30, 2020</option>
+				<option value= "Experssion's, April 3, 2020">Experssion's, April 3, 2020</option>
+		 </select>
+		 
+		 <div id="payment">
+		 	
+		   <div><span class="info">Payment Method</span></div>
+		   
+				<input type="radio" name="payment" id="mastercard" value="mastercard">
+				<label for="mastercard">Mastercard</label>
+				<input type="radio" name="payment" id="visa" value="visa">
+				<label for="visa">Visa</label>
+				<input type="radio" name="payment" id="paypal" value="debit">
+				<label for="debit">Debit</label>
+			 </div>
+			 
+			 <div id="creditcard">
+					<div>
+						<label for="cardholder" class="info">Card Holder</label>
+							<input type="text" name="cardholder" id="cardholder">
+					</div>
+					<div>
+						<label for="cardnumber" class="info">Card Number</label>
+							<input type="text" name="cardnumber" id="cardnumber">
+					</div>
+					<div>
+						<label for="expirationdate" class="info">Expiration Date</label>
+							<input type="text" name="expire" id="expire">
+					</div>
+			 </div>
+						
+			 <a href="#popup1" id="purchase" style="Color:papayawhip">Purchase</a>
+		
+			</fieldset>
+		</form>
+	</div>
+</section>
+
+<section>
+	<div class="popup" id="popup1">
+	<div class="popup_content">
+		<div class="popup_left">
+			<img src="../assets/css/pic/girl1.jpg" class="popup_img" id="firstlady">
+		</div>
+		<div class="popup_right">
+			<a href="#section-tours" class="popup_close">&times;</a>
+			<h2 class="heading-secondary u-margin-bottom-small"><span id="customer"></span></h2>
+			<p  id="total" style="Color:purple;">&nbsp;</p>
+			<h5 class="text-danger" id="checkout">You will attend on the following date:</h5>
+			<h5 id="done" style="Color:purple;">&nbsp;</h5>
+			<h5 id="youremail">&nbsp;</h5>
+			<h3 class="heading-tertiary u-margin-bottom-small pl-5 mt-5" >Please pick up tickets<br> at Ticket Box from location<br> 27719 Robbie Ln Long Beach,CA 90706</h3>
+			<p class="popup_text mt-5">Enjoy your Colors</p>
+		</div>
+	</div>
+  </div>
+</section>
+<script src="../assets/js/jquery.js"></script>
+<script src="../assets/js/anime.min.js"></script>
+<script src="../assets/js/popper.js"></script>
+<script src="../assets/js/jquery-ui.js"></script>
+<script src="../assets/js/bootstrap.js"></script>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>
